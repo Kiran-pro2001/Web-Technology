@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full HTML Revision (From Day 1 to Till Today)</title>
+</head>
+<body bgcolor="pink" text="blue" align="center" background=".">
+    <!-- Basic Terminologies, 
+
+    Broswer -- software to display websites - google chrome, safari, firefox,brave io
+    Search Engine -- Program which give relevant websites related to user's search result.  eg - google, bing, yahoo, duckduckgo
+
+    html -- hypertext markup language -- markup -- predefined -- tags are used
+    to display text, audio, video, links -- we use html
+    to give strcuture
+
+    webpage -- document created with the help of languages like HTML, CSS & Js. - Eg- Amazon Homepage
+
+    single tag -- only opens -- <img/>
+    double tag -- opens & closed both  -  <h1></h1>
+    
+    the main purpose of development is to create user friendly websites. -- money.
+
+    structure of a hmtl
+
+    html --- two child -- head & body
+    - meta -- information about your website
+    - title -- name of your document
+    - head --- meta information
+    - body -- that you want to showcase
+
+     
+    -->
+
+    <!--
+    
+    Basic Tags of HTML  -
+
+    1. Heading Tag -- h1, h2,h3,h4,h5,h6
+    2. Paragraph Tag - p
+    3. span tag - <span>
+    4. break tag - <br>
+    
+    -->
+
+    <h1>Kiran</h1>
+    <h2>Kiran</h2>
+    <h3>Kiran</h3>
+    <h4>Kiran</h4>
+    <h5>Kiran</h5>
+    <h6>Kiran</h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur corrupti, minima optio quae possimus commodi repellendus doloremque quam voluptate minus, quas ipsa error fugit impedit consequatur, quidem accusantium magnam!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi deserunt necessitatibus <span style="color: red;">Kiran</span>nesciunt hic nihil incidunt aliquam iure laudantium reprehenderit enim fugiat neque debitis, aperiam itaque quam repellendus beatae ut.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Et commodi atque blanditiis error optio, cumque <br> doloremque amet. Doloribus maxime esse recusandae nihil necessitatibus fugiat cum. Doloremque quae atque esse quos!</p>
+
+
+    <!-- Basic Styles of HTML  
+     
+    All styling will be done in body 
+
+    1. bgcolor --- to give background color
+    2. text -- to give text color
+    3. align -- to give alignement
+    4. background -- to give the background image
+    
+    -->
+
+
+    <!--How to add multimedia  -
+
+    1. img -- to add image
+    It has 4 properity - src, height, weight, alt
+
+    2. Anchor Tag - to give link -- It has 2 property --- src, target
+
+    targe has 4 values -- _self is a bydefault (open in the same page), _blank will open the page in the new page.
+
+
+    -->
+    
+    <img src="./profile.jpg" alt="Kiran Kumar" height="300px" width="300px"> <br>
+
+    <!-- to open in the same page  -- use target = "_self"  -- if not use, it is by default-->
+    <a href="https://www.wikipedia.org/" target="_self">Go to Wikipedia</a>
+
+    <br> <br>
+
+    <!-- to open in new tab   -- use targe = "_blank" -->
+    <a href="https://www.wikipedia.org/" target="_blank">Go to Wikipedia</a>
+
+
+    <!-- Character Formatting Tags - 9 tags are there
+     bold 
+     italic
+     underline
+     big
+     small
+     delete
+     mark
+     sup
+     sub  -->
+     <br><br> <br>
+
+     <b>Kiran</b> <br>
+     <i>Kiran</i> <br>
+     <u>Kiran</u> <br>
+     <big>Kiran</big> <br>
+     <small>Kiran</small> <br>
+     <strike>Kiran</strike> <br>
+     <mark>Kiran</mark> <br>
+     Kumar<sup>Kiran</sup> <br>
+     Kumar <sub>Kiran</sub> 
+
+     <br><br><br>
+
+
+     <!-- Audio, Video & Iframe  -->
+      <!-- audio - it has two properity -- src, controls -->
+
+      <audio src="./audio.mp3" controls></audio>  
+
+      <br>
+
+      <!-- Video has 7 property -- src, controls, height, width, autoplay, muted, loop  -->
+
+      <video src="./video.mp4" controls height="500px" width="800px" autoplay muted loop></video>
+
+
+      <!-- iframe -- inline frame -- 5 property -- scr,height, width, frameborder,name
+        -->
+
+        <!-- use to show ad on the website  -->
+
+        <iframe src="./25thSept2024(2).html" frameborder="0" height="600px"></iframe>
+
+        <!-- youtube iframe  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fB00t4At0rk?si=GBuCu2zXyzp9mdsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<br><br><br>
+
+
+        <!-- How to connect iframe with the anchor tag  --- use target & name property  -->
+
+        <iframe src="./25thSept2024(3).html" frameborder="0" height="600" width="600px" name="ad"></iframe>
+
+        <br>
+
+        <a href="https://www.wikipedia.org/" target="ad">Go to Wikipedia</a>
+
+
+
+
+</body>
+</html>
