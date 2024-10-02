@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan & Colspan</title>
+</head>
+<body>
+    <!-- Rowspan & Colspan is used for merging rows & columns  -->
+     <!--
+     firs see the picture, and then based on that....create a table...table tag, tr for table row, inside the 1st row -- how many contents you are seeing, create that much cell,
+     for next row -- if that content you already created in above row, then don't make cell for that
+     
+     rowspan = "how many row you want to merge"
+     colspan = "how many columns you want to merge"
+     --> 
+     <table border align="center" bgcolor="yellow" cellspacing="10" cellpadding="10">
+        <caption>IKGPTU Amritsar</caption>
+        <tr>
+            <th colspan="3" bgcolor="white">Student Marks</th>
+            <!-- Student marks should come to one row ---- therefore to ahieve that, we need to merge 3 columns  --- based on the content, the size will change -->
+        </tr>
+        <tr bgcolor="white">
+            <th colspan="2">Details</th>
+            <th rowspan="2">Marks</th>
+        </tr>
+        <tr bgcolor="white">
+            <th>Id</th>
+            <th>Name</th>
+            <!--No need to create for marks, since you already created the Marks above-->
+    
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Kiran</td>
+            <td>89</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Kunal</td>
+            <td>91</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Kajal</td>
+            <td>98</td>
+        </tr>
+     </table>
+    
+</body>
+</html>
