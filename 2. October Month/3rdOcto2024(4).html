@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Again Do the Assignment - 3 (Table)</title>
+</head>
+<body>
+    <!-- Concept -->
+
+    <!-- Rowspan & Colspan is used for merging rows & columns  -->
+    <!--
+    firs see the picture, and then based on that....create a table...table tag, tr for table row, inside the 1st row -- how many contents you are seeing, create that much cell,
+    for next row -- if that content you already created in above row, then don't make cell for that
+    
+    rowspan = "how many row you want to merge"
+    colspan = "how many columns you want to merge"
+
+    then put the border property, and the make it live
+    now apply rowspan & colspan by seeing the picture and the result.
+    --> 
+
+
+
+    <table border cellpadding="10" cellspacing="10" align="center" bgcolor="pink">
+        <tr bgcolor="white">
+            <th colspan="3">Hi there</th>
+            <th colspan="3">2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td colspan="3">7</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td colspan="3">8</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">Hi</td>
+            <td colspan="2">true</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>96</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Hi</td>
+            <td>Bye</td>
+            <td>Hi</td>
+            <td rowspan="2" colspan="3">true</td>
+        </tr>
+        <tr>
+            <td colspan="3">100</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquee Tag</title>
+  </head>
+  <body>
+    <!--
+    marquee -- continuous movement of text or image (content) -- then use marquee tag
+
+    It has 7 properties --- height, width, direction, scrollamount, scrolldelay, behaviour, loop
+
+    1. direction -  By default left (towards left), 
+    It has 4 values - left, right, up, down  
+    left means (towards left)
+    right means (towards right)
+    up means (towards up)
+    down means (towards down)
+
+    - don't use top or bottom -- it's a position
+    
+    2. height & width
+
+    3. scroolamount -- to increase the speed  (by default -- 4 to 5 characters per seconds)
+    4. scrolldelay -- to decrease the speed -- it is in miliseconds -- 1seconds = 1000 miliseconds
+
+    5. behaviour -- how it behave -- by default it is scroll
+    it has three values -- scroll, slide, alternate
+    scroll -- it will start from outside of the screen and goes till the end and get out of it, and then again start from outside of the screen and goes to end and then come out of the screen....this scrolls keep going.
+    slide --- it will start from out of the screen, and goes till the end. and then stops
+    alternate -- it will start from inside of the screen, and it goes till the end (inside of the screen) and then keep moving from theere to start again. ....
+    to control that,, we need to use loop ....how many times this should work...therefore put loop = '2'
+
+    -->
+
+    <marquee
+      behavior="alternate"
+      direction="right"
+      height="300px"  
+      width="900px"
+      scrollamount="20"
+      scrolldelay="10"
+
+      loop = 4
+    >
+      <h1>Kiran is the greatest person ever born on this planet.</h1>
+      <!-- We can put image as well here    -->
+    </marquee>
+
+    <!-- behaviour -- how it behave 
+     it has three values scroll, slide & alternate
+     scroll -- it will move from out of the screen to out of the screen in one direction (By default it is scroll)
+     slide -- it will start from outside of the screen and go till the end and then stops
+     alternate  --- it will start from inside of the screen and go till the end and again bounce back, it will keep moving infinite times.
+     
+     To control the alternate behviour, use loop  -- give value -- how many times it should move -- if loop = 4  , it will bounce 4 times and then stops-->
+     
+  </body>
+</html>
