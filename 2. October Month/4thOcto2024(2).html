@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision of the Class</title>
+</head>
+<body>
+
+    <!--
+
+    name -  text
+    dob -  date 
+    email - email id
+    age - 
+    phone number -  India phone number
+    gender -  male, female, others  (radio buttons) -- only one select and one should be compulsory
+    address -   big text
+    password -  ****  (hidden text)
+    
+    documents -  RC (tick)    [[ multiple choice questions ]]
+              -  MC
+              -  DC (tick)
+    city -  dropdown  (select from them)
+    upload - file to upload
+
+
+    submit, reset, login (by default button -- we can customize it)
+    
+    
+    -->
+
+    <form action="" align="center">
+        <h1>Registration Form</h1>
+        <label for="">
+            Name : <input type="text">
+        </label>
+        <br><br>
+
+        <label for="">
+            DOB : <input type="date">
+        </label>
+        <br><br>
+
+        <label for="">
+            Email Id : <input type="email">
+        </label>
+        <br> <br>
+
+        <label for="">
+            Age : <input type="number">
+        </label>
+        <br> <br>
+
+        <label for="">
+            Telephone Number : <input type="tel" pattern="[0-9]{10}">
+        </label>
+        <br><br>
+
+        <label for="">
+            Gender : <label for="male">Male</label> <input type="radio" name="gender" id="male">
+                     <label for="female">Female</label> <input type="radio" name="gender" id="female">
+                     <label for="others">Others</label> <input type="radio" name="gender" id="female">
+                     <!-- same name, for & id pairs should be same -->
+        </label>
+        <br><br>
+        
+        <label for="">
+            Address : <textarea rows="7" cols="19"></textarea>
+        </label>
+        <br> <br>
+
+        <label for="">
+            Password : <input type="password">
+        </label>
+
+
+
+        <br><br>
+        <input type="submit">
+
+
+    </form>
+    
+</body>
+</html>
