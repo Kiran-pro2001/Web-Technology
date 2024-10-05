@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- This is the "Major Topic of HTML" ...then we will start with CSS   
+
+    Where we use form -- during login at amazon, signup at facebook, registration at unstop
+
+
+    the purpose of any software is to interact! 
+
+    Two Types of Web Pages - 
+
+    1. Static Web Page - it is created once, and viewed by the users...that's it. 
+    user can't change it   eg - bill board, portfolio website, wikipedia - not exactly
+
+    2. Dynamic Web Page - user can change it
+    instagram -- likes, comment, viwes...everytime it got changed. So, dynamic web page. 
+
+    using HTML Form we can create dynamic web pages, previously we learn only static part...whatever topic we learnt till now, that was helping us  to make our website static.
+    To make our website dynamic, we use HTML Form, here we can interact with the server. 
+
+    In real world scenario, how many ways you use form - 
+
+    name -  text
+    dob -  date 
+    email - email id
+    phone number -  India phone number
+    gender -  male, female, others  (radio buttons)
+    address -   big text
+    password -  ****  (hidden text)
+    documents -  RC (tick)    [[ multiple choice questions ]]
+              -  MC
+              -  DC (tick)
+    city -  dropdown  (select from them)
+    upload - file to upload
+
+
+    submit, reset, login (by default button -- we can customize it)
+
+    
+    -->
+
+    <form action="" align="center">  <!--action is used for backend, when we want this data to be send somewhere-->
+        <br>
+        <h1>Registration Form</h1>
+
+        <label for="">
+            Name : <input type="text" required>
+        </label>
+        <br> <br>
+
+
+        <label for="">
+            DOB : <input type="date">    <!--for dob, use date type of input-->
+        </label>
+        <br> <br>
+
+
+        <label for="">
+            Email : <input type="email">  <!-- to check is this email is same as text or not, use input type submit, and try to submit it, you get some popup-->
+        </label>
+        <br> <br>
+
+
+        <label for="">
+            Age : <input type="number">   <!-- input type number is used during order at amazon -- to increase the number of orders, or age increase or decrease-->
+        </label>
+        <br> <br>
+
+
+        <label for="">
+            Tele : 
+            <select> <!--Dropdown-->
+                <option>+91</option>
+                <option>+71</option>
+                <option>+92</option>
+            </select>
+            
+            <input type="tel" pattern="[0-9]{10}">  <!--directly tel will not work, since every country have different pattern, some have 6 characters, some have 7 with alphabets
+            So , use pattern -- regular expression -- start with [] - enter the range -- from 0 to 9, and how many numbers -- use {10} -- total 10 numbers should be entered.  ...you will learn regular expression during the time of Python-- -->
+        </label>
+        <br> <br>
+
+
+        <label for="">
+            Gender : <label for="opt1">Male</label> <input type="radio" name="gender" id="opt1">
+                     <label for="opt2">Female</label> <input type="radio" name="gender" id="opt2">
+                     <label for="opt3">Others</label> <input type="radio" name="gender" id="opt3">
+                     <!--to select only one and automatically get unselected (earlier we can't unselect it), put the same name to all the input tag-->
+                     <!-- to give connection between label & input -- use for & name   -- for in label and name in input tag 
+                      for & name should be same
+                      Earlier we give connection between anchor tag & ifrma tag with the help of name -- so same way-->
+
+                      <!-- now you got to know...why we can't use paragrap tag or any other tag as comparison to label tag...because label tag helps use to give connection between the input tags -->
+
+                      <!-- ********* -->
+                      <!-- same name in all the input tags 
+                       for & id should be same in each label & input pairs  -->
+
+        </label>
+        <br> <br>
+
+        <label for="">
+            Address : <textarea rows="5"  cols="19" ></textarea>
+            <!-- we want a big space, therefore dont' use input tag, use textarea ....user can increase the size...if not, use rows & cols property -->
+        </label>
+        <br> <br>
+
+        
+        <label for="">
+            Password : <input type="password">
+        </label>
+        <br><br>
+
+
+        <label for="">
+            Documents : 
+            <input type="checkbox" id="ac"> <label for="ac">AC</label> <!--for give connection between checkox & text, use same id & for -->
+            <input type="checkbox" id="rc"> <label for="rc">RC</label>
+            <input type="checkbox" id="dl"> <label for="dl">DL</label>
+        </label>
+        <!-- checkbox -- to tick it or untick it -- used in quiz or multiple choice application  -->
+
+        <br><br>
+
+        <label for="">
+            City : 
+            <select >
+                <option>Bengaluru</option> <!--value will use in backend-->
+                <option>Bihar</option>
+                <option >Punjab</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label for="">
+            File : <input type="file">
+        </label>
+
+        <br><br>
+        <input type="reset"> <!--it will reset the complete input fields-->
+        <button>Login</button> <!--by default button --- in this, we need to tell what functionality it should do-->
+        <input type="submit"> <!--it will submit the form-->
+
+        <!-- if any field, you want it mandatorily...then use required property  -->
+         <br><br><br><br><br>
+
+    </form>
+
+    <!--
+
+    in form, the best part is...we just need to use the input and just mention the type....rest everything is same. 
+    We just need to use the form type, and use input with the type ...no need to worry about anything
+     -->
+    
+</body>
+</html>   
