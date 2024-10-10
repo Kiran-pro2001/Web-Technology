@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font & Text Properties</title>
+    <style>
+      h1 {
+        font-family: cursive;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+        /* font-family: 'Times New Roman', Times, serif;  -- By default Times New Roman */
+
+        font-weight: lighter;
+        /* font-weight: bold; */
+
+        font-size: 50px;
+      }
+      h2 {
+        text-align: center; /* text align is left (By default)*/
+
+        text-decoration: underline; /*same as underline tag in html*/
+        /* text-decoration: overline; */
+        /* text-decoration: line-through; */ /*same as strike tag in html*/
+
+        text-shadow: 0px 0px 10px red;
+        /*x axis, y axis, blur effect, color*/
+        /* text-shadow: -10px -10px 10px yellow; */
+
+        text-indent: 50px; /*in newspaper, each line of an article start with an indentation. */
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: lighter;
+        text-shadow: 0px 0px 10px yellow;
+        text-decoration: overline;
+        font-family: cursive;
+      }
+      p {
+        text-indent: 50px;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+
+        text-align: center;
+      }
+      button {
+        height: 200px;
+        width: 200px;
+        background: radial-gradient(red, yellow, green);
+        text-align: left;
+        text-decoration: underline;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        text-indent: 20px;
+        text-shadow: 5px 5px 2px green;
+      }
+      /*button is a component, text-align property will work for the inner text, it will not move the whole button to center, since button is a component. */
+      b {
+        /* text-align: center; - why sir */
+        font-size: 30px;
+        font-family: cursive;
+        /* text-decoration: underline; */
+        text-decoration: overline;
+        font-weight: lighter;
+      }
+      /* img{
+        text-align: center;
+        background: radial-gradient(red,yellow,green,pink) ;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Kiran</h1>
+    <h2>I am a Passionate Software Developer</h2>
+    <h3>I am learning Python Fullstack Django.</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit
+      architecto possimus natus velit repudiandae ipsa, amet voluptatem
+      assumenda officia facere ut sequi facilis numquam veritatis consequuntur
+      earum? Tempora, perferendis!
+    </p>
+    <b
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque
+      quod adipisci aperiam quibusdam. Totam id impedit dolor recusandae,
+      nesciunt modi aut numquam temporibus? Voluptas, saepe repellendus.
+      Quaerat, natus veniam.</b
+    >
+    <br /><br />
+    <button>Register</button>
+    <br><br><br><br><br><br><br><br>
+
+    <img src="./kiran_nobg.png" alt="Kiran Kumar" height="300px">
+  </body>
+</html>
