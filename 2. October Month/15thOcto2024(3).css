@@ -1,0 +1,6 @@
+*{
+    font-size: 15px;
+    background: linear-gradient(blue black red);
+    background: radial-gradient(red green pink blue);
+    /* background-color: red; */
+}

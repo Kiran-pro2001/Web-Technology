@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling, General Sibling, Group Selector</title>
+    <style>
+        h1+p{ /*Adjacent Sibling --- after h1 only the first p tag gets affected (not all) --- 
+            for adjacent sibling use + operator*/
+            color: red;
+            background-color: pink;
+        }
+        h1~p{ /*General Sibling --- after h1, it will affect all the p tag --- for general sibling use tilt (~) operator. */
+            color: brown;
+            background-color: blue;
+        }
+        /*
+        If I want to put this property to b tag, i tag & u tag ------then I have to write this 3 lines of code multiple times -------- so easy way is to group them and the put the property at once
+         b{
+            color: skyblue;
+            background-color: black;
+        } */
+
+        b,i,u{
+            /*For Group Selector -- user comma (,) in betwen the group you created. */
+            color: skyblue;
+            background-color: black;
+        }
+        /*if I want ki for b,i the color should be skyblue and background-color should be different...then use the id & class concept -----this group selector is useful when I want ki same styling should apply for mutliple tags --- like header & footer styling should be same ---then use group selector*/
+
+
+
+        /*Why do we need this...we can do with selector also
+        Actually when we do development...it's not possible to give id & class everytime...we write html once...and the further we just play on css. So, make our task easy. It depens on our usage.....*/
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta alias voluptas aspernatur saepe. Expedita ea sit exercitationem quaerat laboriosam laudantium blanditiis vel corrupti cum recusandae! Iure soluta harum alias.</p>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, exercitationem consequatur? Officiis at dolorum et quam cumque sint debitis neque laudantium odio, repellendus quo doloribus quibusdam autem. Sapiente, fugit mollitia!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus corporis assumenda unde ex hic odit. Cumque porro est vitae rerum aperiam enim possimus ex molestiae optio iusto perferendis, quo nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis quod iusto, quaerat ut laboriosam ab voluptatum quos dolorem autem explicabo at. Pariatur illo nesciunt animi impedit eaque est amet.</p>
+    <br><br>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente aperiam iusto obcaecati eius nostrum atque laborum. Eaque necessitatibus similique ea non error, libero eveniet incidunt voluptatum magnam corporis optio!</b>
+    <br><br>
+    <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error cumque placeat magnam atque dolor blanditiis natus? Optio, rerum nemo. Expedita sit culpa rem excepturi consequuntur repellat, adipisci necessitatibus maxime perferendis?</i>
+    <br><br>
+    <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam reiciendis quos, eius tempora veniam ipsam natus ea! Et itaque ratione enim reprehenderit veniam labore debitis nobis soluta fugit magni?</u>
+</body>
+</html>

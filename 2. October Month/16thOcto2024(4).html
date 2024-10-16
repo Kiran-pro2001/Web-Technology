@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Combinator, General Sibling Combinator, Group Selector</title>
+    <style>
+        h1+p{
+            /* Adjacent Sibling Combinator -- only the first p tag gets affected  */
+            color: pink;
+            background-color: brown;
+        }
+        h1~p{
+            /* General Sibling Combinator -- all the p tag after the h1 tag gets affected */
+            color: black;
+            background-color: tomato;
+        }
+        b,i,u{
+            /* Group Selector  */
+            color: blue;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus enim iusto voluptatibus est itaque iure magni soluta. Ipsa voluptates voluptatibus suscipit laudantium, ea dicta ut quo corrupti officia, sequi assumenda!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi, assumenda repellendus doloribus dolores provident quasi reiciendis molestiae recusandae laboriosam. Vero possimus ad pariatur assumenda unde cum dolores eligendi atque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim perspiciatis ipsam facilis architecto dolore non nobis voluptate qui, laudantium temporibus vel iste tempora dignissimos rem repellat error totam nihil quibusdam.</p>
+    <br><br>
+    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid ipsam pariatur fugit quis earum suscipit hic ipsa, optio quam esse repellat ex aut repellendus asperiores. Quod quis sunt officiis.</b>
+    <br><br>
+    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates provident quasi repellat eaque animi iusto laboriosam id repellendus? Eligendi amet rem a facilis expedita quae eum. Itaque, illo id!</i>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <!--
+    Combinators -- when multiple tags are there -- header img tag, and footer img tag --- but I want to change the header img tag -------- then we need to use combinators.
+
+    1. Descendent Combinator.  (we use space) --it will select all the following child for the following generations
+    2. Child Combinator. (We use > symbol) -- it will select the first child only.
+    3. Adjacent Sibling Combinator.
+    4. General Sibling Combinator.
+    5. Group Selector --- easy
+    
+    
+    -->
+    <style>
+        .sparent p {   /*Descendent Selector --- using space ----it will select all the following genrations child...therefore all p tag get selected. */
+            color: red;
+            background-color: yellow;
+
+        }
+        .sparent>p{   /*Child Selector -- only the child get's selected --thereofe first p tag gets selected -- use > */
+            color: green;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="sparent"> <!--super parent ----- super parent have two childs -- 1. p tag  2. div -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nobis! Exercitationem placeat atque nisi quisquam labore nam corporis adipisci molestiae earum! Adipisci voluptatibus accusamus architecto? Quibusdam voluptatum delectus magni exercitationem!</p>
+        <div class="parent"> <!--parent -------parent have two childs ---- 1. p tag   2. div -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, a minima. Facere, voluptatum! Ratione quo hic impedit fugiat, vel quos optio quam est fuga voluptate quod commodi, veniam aliquid at.</p>
+            <div class="child"> <!--child-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, consectetur? Necessitatibus amet officia doloribus labore molestias mollitia velit libero recusandae ea distinctio commodi, dicta facilis laborum reiciendis provident officiis reprehenderit.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

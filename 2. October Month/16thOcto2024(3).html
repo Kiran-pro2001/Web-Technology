@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent & Child Combinator</title>
+    <!-- Combinators 
+
+    1. Descendent Cobminator.
+    2. Child Combinator.
+    3. Adjacent Sibling Combinator.
+    4. General Sibling Combinator.
+    5. Group Selector
+     
+    
+    -->
+
+    <style>
+        .sparent p {
+            /*Descendent Combinator -- use space -- apply to all p tag in sparent */
+            color: red;
+            background-color: pink;
+        }
+        .sparent>p{
+            /* Child Combinator -- only the first p tag of sparent gets affected */
+            color: blue;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="sparent">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio explicabo, fugit iusto perferendis odio qui ea? Sapiente veniam excepturi animi ipsa, maiores, omnis molestias totam, quisquam voluptatibus blanditiis labore explicabo!</p>
+        <div class="parent">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, harum modi dolorem ut aliquam cupiditate iste enim aliquid animi delectus veritatis laudantium corrupti? Autem sed non ad exercitationem, aspernatur dolor!</p>
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, perspiciatis, voluptatibus unde facere ipsum porro assumenda, modi expedita dicta magni molestiae alias totam facilis dolor excepturi vitae adipisci eveniet nisi!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
