@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+
+    <!--
+
+    Basic Selectors are of 4 types -
+    1. Universal Selectors (*).
+    2. Type or Tagname Selectors (h1,p).
+    3. Class Selectors (.classname).
+    4. Id Selectors (#idname). 
+
+    *,.,# are the operators that are used. 
+    
+    
+    -->
+    <style>
+        /* Type / Tagname Selector */ 
+        h1{
+            color: blue;
+            background-color: aqua;
+        }
+        .bar{  /*Class has more priority than Tagname*/
+            color: brown;
+            background-color: chartreuse;
+        }
+        #road{
+            /*Id has more priority than Class Name*/
+            color: darkgreen;
+            background-color: thistle;
+        }
+        *{
+            /*Universal Selector -- has least priority than all of it -- it will select to all in the webpage*/
+            color: pink;
+            background-color: mediumslateblue;
+            font-size: 20px;  /*All will have font size to 20px -- now no difference for h1 & p tag.*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="road" class="bar">Kiran</h1>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor at saepe minima voluptates vero consectetur error, ut exercitationem dolore aliquam, accusamus, obcaecati deserunt magnam nihil. Laboriosam, blanditiis. Molestiae, aspernatur natus.</b>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloremque sequi ipsam aspernatur asperiores cupiditate ducimus sint pariatur. Obcaecati ea molestias autem beatae accusamus possimus laborum dicta tenetur aperiam amet?</p>
+    <h1>Kiran</h1>
+    
+</body>
+</html>

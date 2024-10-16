@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <!--
+    Basic Selectors -
+    1. Universal Selector.
+    2. Type or Tagname Selector.
+    3. Class Selector.
+    4. Id Selector.
+    
+    
+    -->
+    <style>
+        h1{
+            color: antiquewhite;
+            background-color: red;
+        }
+        .a{ /*Class Selector has more priority than Tag or Type Selector*/
+            color: green;
+            background-color: blue;
+        }
+        #b{ /*Id Selector has the highest priority from all. */
+            color: pink;
+            background-color: brown;
+        }
+        *{ /*Least Priority -- apply to all*/
+            background-color: aqua;
+            color: salmon;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="a" id="b">Kiran</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae commodi corrupti amet nulla voluptas iste quam doloremque sunt a fuga nihil saepe asperiores, vel, excepturi itaque. Cupiditate, inventore explicabo.</p>
+    <h1>Kiran</h1>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa nihil nisi animi sint dolorum, sunt numquam libero nesciunt mollitia quidem necessitatibus fugit ipsum architecto minima nam non porro? Voluptates!</b>
+</body>
+</html>
