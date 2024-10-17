@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <style>
+
+        /* Basic Selector - 
+        1. Universal Selector.
+        2. Type or Tagname Selector.
+        3. Id Selector.
+        4. Class Selector. 
+        
+        Combinator -
+        1. Descendent Combinators.
+        2. Child Combinators.
+        3. Adjacent Sibling.
+        4. General Sibling.
+        5. Group Selector. 
+
+        */
+        
+        
+        /* h1{
+            color: red;
+            background-color: pink;
+        } */
+         /*Descendent Selector -- for all the child p inside h1*/
+        h1 p { 
+            color: blue;
+            background-color: brown;
+        }
+        /*Child Selector -- only the own child p inside h1 tag */
+        /* h1>p{
+           color: aqua;
+            background-color: palevioletred;
+        } */
+
+
+         
+        /* Adjacent Combinator  -- after every p only the first b tag gets affected. */
+        p+b{
+            background-color: black;
+            color: green;
+        }
+
+        /* General Combinator  -- after every p all b gets affected  */
+        p~b{
+            background-color: magenta;
+            color: red;
+        }
+
+        /* Group Selectors  */
+        i,b{
+            font-size: 34px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, recusandae quis sapiente sit dolores quia at nesciunt fugiat perspiciatis a in eveniet autem ad reprehenderit qui soluta laudantium officia nisi?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis officiis rerum excepturi praesentium quidem iusto aliquid molestias tempora dolore corrupti deleniti, odio illo laboriosam incidunt voluptatibus? Obcaecati aliquid harum debitis.</p>
+        <br><br>
+        <b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum eligendi sed fuga vitae perspiciatis magnam voluptates, necessitatibus numquam consectetur natus recusandae! Ad fuga sequi harum cupiditate tenetur, accusantium non quidem?</b>
+        <br><br>
+        <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia recusandae odio quia natus ea laborum autem soluta perferendis, voluptatem doloremque, aliquam tempore deleniti accusamus est itaque tenetur minus officia optio!</i>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt quaerat exercitationem impedit eius vitae ipsum libero, natus doloribus officiis repudiandae praesentium recusandae harum velit beatae sapiente veniam fugiat enim?</p>
+        <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quibusdam accusamus voluptatum impedit accusantium in officia nemo sit reprehenderit. Nam officia harum veniam corrupti delectus vero maxime deserunt necessitatibus ratione.</b>
+    </h1>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus qui doloribus ipsum. Suscipit nemo, beatae quis eius omnis quod libero sapiente voluptas illo voluptate. Alias a quae aut repellendus.</p>
+    <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa modi recusandae ducimus expedita esse suscipit placeat totam sit eveniet id! Sapiente ipsa nobis qui nisi voluptate sint ex laborum eveniet!</b>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quibusdam reprehenderit sapiente iusto ipsa repudiandae modi ut, quae dolorum, voluptatibus eveniet laudantium debitis. Sequi ducimus eius expedita, qui ex accusamus?</p>
+</body>
+</html>

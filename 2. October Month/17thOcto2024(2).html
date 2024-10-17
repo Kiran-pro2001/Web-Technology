@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision of Pseudo Selectors</title>
+    <!-- Pseudo Selectors 
+     1. First-Letter.
+     2. First-Line.
+     3. Before.
+     4. After.
+     5.Placeholder
+
+    -->
+     <style>
+        p::first-letter{
+            color: blue;
+            font-size: 30px;
+        }
+        p::first-line{
+            background-color: red;
+        }
+        h1::before{
+            content: "Kiran";
+        }
+        h1::after{
+            /*Useful when we open the Flipkart Sale --- after the MRP, sale price came...for all the pages.*/
+            content: "Done";
+        }
+        /* input{
+            color: red;
+        } */
+        input::placeholder{
+            color: red;
+        }
+
+     </style>
+</head>
+<body>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nam cupiditate fuga quidem aliquam doloremque neque maxime debitis eius magnam accusamus officiis doloribus quod recusandae. Pariatur quaerat odio eligendi voluptatibus.</p>
+    <br><br>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quia a sed eligendi veritatis aut nulla totam, repellendus, mollitia eum sint reprehenderit obcaecati blanditiis neque cum! Nostrum iure saepe cum!</b>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem minima suscipit illo excepturi, magni natus, quia sequi et esse nam atque, unde quaerat pariatur alias similique saepe! Quidem, quo.</p>
+    <form action="" align="center">
+        <label for="">
+            Name: <input type="text" placeholder="Enter your Name">
+        </label>
+    </form>
+    
+</body>
+</html>

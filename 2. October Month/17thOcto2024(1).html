@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <!--
+    Pseudo Selecotors -- partially --- we want to select a part of a tag. --- we can do with span as well, but easily with the help of pseduo selector we can do it fast.
+
+    It is of 5 types -
+    1. first-letter. --- we see in newspaper or in wikipedia -- first letter is capital & different color.
+    2. first-line
+    3. before
+    4. after
+    5. placeholder
+    
+    -->
+    <style>
+        p::first-letter{
+            /*First Letter of all p tag gets affected*/
+            color: red;
+            font-size: 40px;
+        }
+        p::first-line{
+            /* first line of all p tag gets affected  */
+            color: pink;
+            background-color: brown;
+        }
+        h4::before{
+            content: "Hi, Kiran this side";
+        }
+        h4::after{
+            content : "I am the greatest person ever born on this planet."
+        }
+        /* input{  --- this will not make the font color of placeholder to blue, but I want to do so.
+        So, Use placholder with Pseudo Selectors
+            color: blue;
+        } */
+
+        input::placeholder{
+            /*We can affect the particular property of input tag using Pseudo Selectors */
+            color: brown;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum magnam tempora veniam, nesciunt facilis commodi error ex mollitia. Labore repellendus laborum accusantium expedita soluta neque rem suscipit a perspiciatis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quae ex beatae id incidunt, placeat minus deleniti tenetur voluptates voluptatem vitae harum similique maxime cupiditate nisi deserunt ullam impedit molestiae?</p>
+    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae totam vel reprehenderit atque? Asperiores adipisci esse nesciunt itaque. Excepturi eius nostrum, eveniet quisquam velit natus ab laboriosam minima atque aliquid.</h4>
+    
+</body>
+</html>
