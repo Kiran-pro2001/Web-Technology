@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision of Selectors</title>
+    <!--
+    There are three types of Selecotors -
+
+    1. Basic Selector.
+    - Universal Selector.  (*)
+    - Type or Tagname Selector. (h1,p)
+    - Id Selector. (#idname)
+    - Class Selector. (.classname)
+
+    2. Combinators.
+    - Descendent combinator. (space)
+    - Child combinator. (>)
+    - Adjacent Sibling combinator. (+)
+    - General Sibling combinator. (~)
+    - Group Selectors. (,)
+
+
+    3. Pseudo Selectors.
+    - first-letter (::first-letter)
+    - first-line (::first-line)
+    - before (::before)
+    - after (::after)
+    - placeholder (::placeholder)
+    
+    -->
+
+    <style>
+        /* Basic Selector  */
+
+        /* 1. Universal Selector  -- least priority*/
+        /* *{ 
+            background-color: brown;
+            color: white;
+        } */
+
+         /* 2. Id Selector  */
+        #id{
+            color: pink;
+            background-color: red;
+         }
+         /*3. Class Selector  */
+        .class{
+            color: blue;
+            background-color: aquamarine;
+         }
+
+         /*4. Tagname or Type Selector  */
+         h2{
+            color: red;
+         }
+
+
+
+
+         /* Combinators  */
+
+         /* 1. Descendent Combinators - (space) -- all the childs  */
+
+
+
+         /* 2. Child Combinators  - (>) -- only it's own child*/
+
+         /* 3. Adjacent Sibling Combinator - (+)  -- only the first adjacent one*/
+
+         /* 4. General Sibling Combinator  - (~) -- all the  */
+
+         /* 5. Group Selector  -- comma  -- group*/
+
+
+        /* Pseudo Selectors  */
+
+        /* 1. first-line  */
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+        /* 2. first-line  */
+        p::first-line{
+            background-color: yellow;
+        }
+        /* 3. before  */
+        p::before{
+            content: "Kiran";
+        }
+        /* 4. after  */
+        p::after{
+            content: "Kiran";
+        }
+        /* 5. placeholder  */
+        input::placeholder{
+            color: red;
+            /* width: 500px; */
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae soluta modi earum reiciendis placeat repellat autem! Accusantium, adipisci magnam? Voluptatem vero at, quod cum temporibus itaque velit? Quos, corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore odio magni, modi aliquid nisi minus voluptatem, recusandae repudiandae ipsa pariatur, quis qui nemo veniam rerum iusto? Optio, mollitia eligendi.</p>
+    <p id="id">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora voluptate, veniam excepturi culpa quisquam exercitationem reprehenderit, sequi necessitatibus incidunt itaque possimus facere consectetur? Vel pariatur eligendi molestias ipsam doloribus recusandae!</p>
+    <p class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cupiditate culpa error veniam odit corrupti, modi sunt. Nostrum illo quam, rem magnam dolore nesciunt autem maiores, quaerat accusamus laborum eos.</p>
+    <h2>Kiran is a Good Boy. </h2>
+</body>
+</html>

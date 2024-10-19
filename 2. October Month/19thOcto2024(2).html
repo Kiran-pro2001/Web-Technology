@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment on CSS </title>
+    <!--
+    
+    https://ap.starbucksglobalacademy.com/
+    
+    Design the coffee part from the above website.
+    Starbucks Global Academy
+
+    -->
+    <style>
+        *{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .bgimagee{
+            background: url(./coffee.png);
+            background-position: top;
+            background-size: cover;
+            width: 490px;
+            height: 750px;
+            background-repeat: no-repeat;
+        }
+        /* img{
+            transform: scale(1.5);
+        } */
+        b{
+            font-size: 20px;
+        }
+      #mainheader{
+        font-size: 40px;
+      }
+      h1~p{
+        font-size: 18px;
+      }
+      label,span,.label{
+        font-size: 18px;
+      }
+      .name{
+        width: 500px;
+        height: 30px;
+      }
+      .loc{
+        width: 210px;
+        height: 35px;
+      }
+      .ph1{
+        width: 100px;
+        height: 35px;
+      }
+      .ph2{
+        width: 120px;
+        height: 30px;
+      }
+      .nextbtn{
+        height: 40px;
+        width: 100px;
+        background-color: #00704A;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+
+    </style>
+</head>
+<body bgcolor="#F5F5F5">
+    <table width="1200px" align="center" cellspacing="50" bgcolor="#FFFFFF">
+        <tr>
+            <td class="bgimagee">
+                <!-- <img src="./coffee.png" alt="Coffee" width="480px" height="750px"> -->
+            </td>
+            <td>
+                <h1 id="mainheader">Take courses today</h1>
+                <p >There are many pathways to opportunity and success and education is a great one. To get started with taking courses on Starbucks Global Academy, simply enter your name and email in the form below and we will send you updates and a link to your account.</p>
+                <br>
+                <b>Already have an account?</b> <br> 
+                <span><span style="color: green; text-decoration: underline;">Sign in</span> to add these courses to your account.</span>
+
+                <form action="">
+                    <label for=""> <br><br>
+                        First Name*  <br>
+                        <input type="text" required width="500px" class="name">
+                    </label>
+                    <br> <br>
+                    <label for="">
+                        Last Name*  <br>
+                        <input type="text" required class="name">
+                    </label> <br><br>
+                    <label for="">
+                        Email* <br>
+                        <input type="email" required class="name">
+                    </label> <br><br>
+
+                    <table  >
+                        <tr>
+                            <td class="label">Location*</td>
+                            <td></td>
+                            <td class="label">Phone number</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="" id="" class="loc">
+                                    <option value="">Malaysia</option>
+                                    <option value="">Australia</option>
+                                    <option value="">Brunei</option>
+                                    <option value="">Cambodia</option>
+                                    <option value="">Hong Kong</option>
+                                    <option value="">India</option>
+                                    <option value="">Indonesia</option>
+                                    <option value="">Japan</option>
+                                </select>
+                            </td>
+                            <td>
+                                &nbsp; &nbsp; &nbsp; &nbsp; 
+                            </td>
+                            <td>
+                                <select name="" id="" class="ph1">
+                                    <option value="">+60</option>
+                                    <option value="">+261</option>
+                                    <option value="">+91</option>
+                                    <option value="">+981</option>
+                                    <option value="">+871</option>
+                                </select> 
+                                &nbsp;
+                                <input type="number" placeholder="Phone Number" class="ph2">
+                              </label>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                <br>
+
+
+                    <label for="">
+                        Are you a Starbucks Partner?* <br>
+                        <select name="" id="" class="name">
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                    </label>
+
+<br><br>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <button class="nextbtn">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+
+
+<!--
+
+How to make Malaysia & Phone Number quiet left. 
+
+Kindly give the feedback for the design. And Any are of improvement in my codebase! 
+
+-->

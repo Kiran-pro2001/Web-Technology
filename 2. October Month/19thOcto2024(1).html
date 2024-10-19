@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!--
+    Box Model have 4 layers 
+    1. Content -- whatever space taken by the content.
+    2. Padding.
+    3. Border.
+    4. Margin. 
+    -->
+
+    <style>
+        h1{
+            /* Content  */
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+
+
+            /* Border  */
+            /* border-width: 20px;
+            border-style: solid;
+            border-style: dotted;
+            border-style: dashed;
+            border-style: groove;  /*To make 3d border*/
+            /* border-style: double;
+            border-color: red; */ 
+
+            /* shorthand  */
+            border: 10px solid red;
+
+            /* Padding Property */
+            /* padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px; */
+
+            /* Padding Shorthand - It has 3 Shorthand  */
+            /* padding: 20px 20px 20px 20px;    clockwise  -- top, right, bottom, left */
+            /* padding: 20px 20px;    top/bottom  right/left */
+            padding: 20px;  /*top/right/bottom/left*/
+
+
+            /* Margin Property  */
+            /* margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px; */
+
+            /* Margin Shorthand  */
+            /* margin: 30px 30px 30px 30px ;    clockwise  -- top, right, bottom, left */
+            /* margin: 30px 30px;    top/bottom  right/left   */
+            margin: 30px;  /*top/right/bottom/left*/
+
+
+        }
+
+        img{
+            border: 10px groove black;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        iframe{
+            border: 10px dotted black;
+        }
+
+        video{
+            border: 10px double black;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        audio{
+            border: 10px dotted black;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        /* border radius -- to make the curvy radius  */
+        /* box-shadow  -- it is same as text shadow, it take 4 values - x axis, y axis, blur effect & color */
+
+        h2{
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+
+            border-radius: 100px;  /*to make the circular shape*/
+            box-shadow: 10px 10px 10px green;
+
+            /* padding-left: 40px; */
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kiran</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima possimus optio veniam maiores eum molestiae illo sequi animi, cum aut, beatae id ducimus, ut at nihil ipsa. Ratione, labore.</p>
+
+    <img src="./1.jpg" alt="Kiran Kumar" height="200px">
+    <img src="./profile.jpg" alt="Kiran Kumar Profile Image" height="200px">
+
+    <!-- <iframe src="www.ptu.ac.in" frameborder="0" height="300px"> <br> -->
+
+    <video src="./video.mp4" height="200px" controls autoplay muted></video>
+    <!-- <video src="./video.mp4" height="200px" controls autoplay muted></video> -->
+     <audio src="./audio.mp3" controls></audio>
+
+    </iframe>
+
+    <h2>Kiran</h2>
+    
+</body>
+</html>
