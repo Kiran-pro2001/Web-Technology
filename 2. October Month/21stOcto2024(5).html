@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision - Flexbox </title>
+
+    <!-- flexbox has 4 properties 
+     1. display: flex
+     2. justify-content: start/end/center/ space-between/space-around/space-evenly ;  (to align horizontally)
+     3. align-items: start/end/center :  (to align vertically)
+     4. flex-direction:  row/column/row-reverse/column-reverse   (to change the direction of items)
+     
+     -->
+    <style>
+        .m1,.m2,.m3{
+            height: 200px;
+            width: 200px;
+        }
+        .m1{
+            background-color: red;
+        }
+        .m2{
+            background-color: yellow;
+        }
+        .m3{
+            background-color: pink;
+        }
+        .parent{
+            width: 800px;
+            height: 650px;
+            background-color: aqua;
+
+            display: flex;
+
+            /*to align horizontally*/
+            /* justify-content:start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-around;  */
+            /*each child get the equal space both side*/
+            justify-content: space-evenly; 
+            /*space gets evenly */
+            /* justify-content: space-between; */
+             /*start & end get stick to end..and between the space will be there */
+
+            /* vertically align it  */
+             /* align-items: start; */
+             /* align-items: end; */
+             align-items: center;
+
+             
+             /* flex-direction: row; */
+             /* flex-direction: column; */
+             /* flex-direction: row-reverse; */
+             flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+    </div>
+</body>
+</html>

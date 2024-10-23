@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <!-- We can change the by default display property of elements using display properties 
+     display has 4 properties - display: inline, block, inline-block & none
+     
+     display: inline  (in the same line & height/widht not work)
+     display: block (content come one by one & height/widht will work)
+     display: inline-block  (content come in the same line & height/widht will work)
+     display: none  (remove the element from the page)
+
+     the main purpose of html & css is to display content on the page...then why to remove the element. If you are designing it..and then why remove it 
+
+     So, it is very useful for responsivenes. 
+
+    We usuallay design for two screens -
+    1. Laptops ---- Landscape View --- so we need to showcase on Horizontally. 
+    2. Phone ---- Portrait View --- so we need to showcase on vertically.
+
+    so for laptops, we will hide the vertical elements.
+    so for phone, we will hide the horizontal elements
+     -->
+
+
+     <style>
+        h1,span,b{
+            background-color: aqua;
+            height: 100px; /*for span & b -- height widht not work*/
+            width: 100px;
+        }
+        /*We can change the bydefault property of display properties */
+        h1{
+            display: inline;  /*Now content come in the same line & height widht not work*/
+        }
+        span{
+            display: inline-block;  /*content come in the same line & height widht will work*/
+        }
+
+        b{
+            display: block; /*content come one after one, and height widhth will work*/
+        }
+
+        big{
+            display: none; /*element will be remove from the webpage*/
+        }
+     </style>
+     
+</head>
+<body>
+    <big>Kiran</big>
+    <h1>Hello</h1>  <!--By default display property is Block-->
+    <span>Hello</span> <!--By default display property is inline-->
+    <b>Hello</b> <!--By default display proeprty is inline-->
+
+</body>
+</html>
+
+<!-- inline block examples are -- img, iframe, video  ---since we can give the height & widht...and they come into one line only -->

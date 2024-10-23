@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .m1,.mn,.mp{
+            height: 100px;
+            width: 100px;
+        }
+        .m1{
+            background-color: blueviolet;
+        }
+        .mn{
+            background-color: crimson;
+        }
+        .mp{
+            background-color: brown;
+        }
+
+
+
+
+
+        .parent{
+            background-color: aquamarine;
+            height: 600px;
+            width: 600px;
+            font-size: 30px;
+            color: white;
+
+
+            display: grid;
+
+            grid-template-columns: 200px 200px 200px;  /*We can do the distribution using grid-template-column & grid-template-rows ..but we need to manually mention the height & widht....to make it automatic....use the property of justify-content & align-content ...it is useful for responsiveness */
+            grid-template-rows: 100px 100px 100px;
+
+            /* justify-content & align-content are used to distribute the content 
+            
+            align items is to position it -- top, bottom, center 
+            
+            */
+            justify-content: space-evenly;
+
+            align-content: space-evenly;   /*  all same value as justify content */
+
+            /* align-items:  end/center ;   to use this value we need to first remove the height that we have given using grid template rows*/
+
+
+
+            /* flex problem -- that merge it...we can solve it using fled-wrap  --- but it will not make it equally. 
+            
+            Whether to use grid or flex...it depends on our usage.
+            if want equally space for rows & columns...use grid.
+            if only in rows...then use flex ...like in navigation bar. 
+            
+            */
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- total 9 childs  -- we need distribute it equally, but parent have 600 width & hegith ..not possible with 100 heigh width for each child..so use grid, it will make your content equally spread....like a table...like rows & columns format. -->
+        <div class="m1">10</div>
+        <div class="mn">20</div>
+        <div class="mp">30</div>
+
+        <div class="m1">40</div>
+        <div class="mn">50</div>
+        <div class="mp">60</div>
+
+        <div class="m1">70</div>
+        <div class="mn">80</div>
+        <div class="mp">90</div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- create the project of zepto header part -->
+<!--startbucks -- header create it using flex  [[[ Backlog HW ]]]-->

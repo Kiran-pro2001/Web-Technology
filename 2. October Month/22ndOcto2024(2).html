@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Zepto Header Part -- clone it -->
+
+    <style>
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background: linear-gradient(rgb(239, 154, 239),rgb(238, 184, 238),white, white,white,white,whitesmoke);
+            
+            /* border-bottom: 1px solid black; */
+            padding-right:  80px;
+            padding-left: 80px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .search input{
+            height: 30px;
+            width: 830px;
+        }
+        .search input::placeholder{
+            text-indent: 30px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .loc select{
+            border: none;
+            outline: none;
+
+        }
+        .login,.cart{
+            width: 30px;
+            /* height: 30px; */
+        }
+
+        .products {
+            display: flex;
+            /* grid-template-columns: 400px 400px 400px; */
+            align-items: center;
+            justify-content: start;
+
+            /* background: url(https://cdn.zeptonow.com/production///tr:w-1080,ar-1080-138,pr-true,f-auto,q-80/inventory/banner/33eb69d5-3361-4670-b584-6162c1fd9025.png); */
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            /* width: 1800px; */
+            /* height: 350px; */
+            
+            margin: 0px 20px ;
+            height: 250px;
+
+            background-color: #720044;
+        }
+
+        .products img{
+            height: 170px;
+            /* width: 100px; */
+            padding: 10px 10px;
+
+        }
+
+        section{
+            padding: 30px 100px;
+            text-align: center;
+            /* width: 800px; */
+        }
+        .surf_excel img{
+            width: 1280px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.5.0/images/header/primary-logo.svg" alt="">
+        </div>
+        <div class="loc">
+            <h3>Delivery in 6 Mins</h3>
+            <select>
+                <option>7th B Cross Road, Industrial Area</option>
+            </select>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="Search for 'Kurkure'">
+            </form>
+        </div>
+
+        <div class="login">
+            <!-- copy the svg for the logo by inspecting it  -->
+            <svg fill="none" height="24px" viewBox="0 0 26 26" width="24px" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="11.168" r="3.5" stroke="#000000" stroke-linecap="round" stroke-width="1.6"></circle><circle cx="12.5" cy="13.5" r="10.5" stroke="#000000" stroke-width="1.6"></circle><path d="M19.5 21.3236C19.0871 20.0832 18.1773 18.9872 16.9117 18.2054C15.646 17.4237 14.0953 17 12.5 17C10.9047 17 9.35398 17.4237 8.08835 18.2054C6.82271 18.9872 5.91289 20.0832 5.5 21.3236" stroke="#000000" stroke-linecap="round" stroke-width="1.6"></path></svg>
+            <p>Login</p>
+        </div>
+
+        <div class="cart">
+            <svg color="#000000" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5586 22C11.387 22 12.0586 21.317 12.0586 20.4746C12.0586 19.6321 11.387 18.9492 10.5586 18.9492C9.73017 18.9492 9.05859 19.6321 9.05859 20.4746C9.05859 21.317 9.73017 22 10.5586 22Z" fill="#000000"></path><path d="M17.6177 22C18.4461 22 19.1177 21.317 19.1177 20.4746C19.1177 19.6321 18.4461 18.9492 17.6177 18.9492C16.7892 18.9492 16.1177 19.6321 16.1177 20.4746C16.1177 21.317 16.7892 22 17.6177 22Z" fill="#000000"></path><path d="M2 2.06277C3.76471 2.0629 4.94118 1.4978 6.11765 3.75768M6.11765 3.75768H19.2461C20.6051 3.75768 21.5684 5.0841 21.1479 6.37649L19.5082 11.416C19.2402 12.2397 18.4725 12.7972 17.6064 12.7972H9.05882M6.11765 3.75768L9.05882 12.7972M20.8235 16.752H9.27151C8.17943 16.752 7.29412 15.8667 7.29412 14.7746V14.5619C7.29412 13.5873 8.0842 12.7972 9.05882 12.7972V12.7972" stroke="#000000" stroke-linecap="round" stroke-width="1.8"></path></svg>
+            <p>Cart</p>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="paan_corner">
+            <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.5.0/tr:w-1280,ar-1438-235,pr-true,f-auto,q-80//images/paan-corner/paan-corner-banner-desktop.png" alt="">
+        </div>
+        <div class="diwali">
+            <img src="https://cdn.zeptonow.com/production///tr:w-1280,ar-1440-320,pr-true,f-auto,q-80/inventory/banner/410cef80-1cfc-4934-8fab-bfeb936afe44.png" alt="">
+        </div>
+        <div class="products">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/ac6f1677-4c6a-420a-b881-d1036290c85e.png" alt="">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/0bdeaec5-edab-4565-ad95-7b8ac247844a.png" alt="">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/d39892f7-7d32-4044-a119-e0ef17b37852.png" alt="">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/15e8a008-3eb5-4ecc-b5cc-44ed77b7a31e.png" alt="">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/81108a76-2ff2-4986-83aa-abbebd677d0a.png" alt="">
+            <img src="https://cdn.zeptonow.com/production///tr:w-312,ar-312-276,pr-true,f-auto,q-80/inventory/banner/8aa52666-9778-4d3f-8eec-81005a35fe11.png" alt="">
+        </div>
+        <div class="surf_excel">
+            <img src="https://cdn.zeptonow.com/production///tr:w-1080,ar-1080-138,pr-true,f-auto,q-80/inventory/banner/33eb69d5-3361-4670-b584-6162c1fd9025.png" alt="">
+        </div>
+    </section>
+
+    <!-- I am getting problem to set the image   --- background heigh & widht is there...and uppar wala imge ki bhi kuch positions ho uppar...unke beech me padding ho..
+     Sir, how to calculate the height & widht of the background image...and how to position the images -->
+
+     <!-- what's the logic to create the slider
+      
+     How navigation is fixed...it is stopping the content 
+     
+     
+     Selector Assignments
+     Notes of Flexbox & Grid
+
+     Page Designing 
+     
+     -->
+
+
+    
+</body>
+</html>

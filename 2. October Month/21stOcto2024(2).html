@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox -- to solve that problem (all not come in one line..up & down..solve this problem of randomness)</title>
+    <!--
+    Flexbox is used to make our website responsivness. --- all content change according to the screen size.
+    Flexbox -- Interviewer ask --- explain all the below properties that I write in the parent
+    Flex propertie apply to the parent.
+    
+    justify-content & align-items properties will only work..if you apply display flex to the parent. 
+    Keep in mind that...display: flex is apply to the parent.  (****)
+    
+    -->
+    
+    <style>
+        /*Use group selector --- to give one property to multiple tags */
+        .m1,.mn,.mp{
+            height: 100px;
+            width: 100px;
+        }
+        /*I want to make each box different color -- therefore use separately*/
+        .m1{
+            background-color: blueviolet;
+        }
+        .mn{
+            background-color: crimson;
+        }
+        .mp{
+            background-color: brown;
+        }
+        .parent{
+            width: 600px;
+            height: 600px;
+            background-color: aquamarine;
+
+            display: flex;
+
+            /* align-items: start; */
+            /* align-items: end; */
+            align-items: center;
+
+            /* justify-content: start; */
+            /* justify-content: center; */
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: space-between;
+
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+
+            
+        }
+
+
+        /* Notes sir will give by tomorrow by drawing an image  --- and one property is left, he will explain by tomorrow and then notes he will give. 
+      
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="parent">   
+        <div class="m1"></div>
+        <div class="mn"></div>
+        <div class="mp"></div>
+    </div>
+    
+</body>
+</html>
+
+

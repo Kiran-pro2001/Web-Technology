@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment on CSS </title>
-    <!--
-    
-    https://ap.starbucksglobalacademy.com/
-    
-    Design the coffee part from the above website.
-    Starbucks Global Academy
 
-
-    Bas output aana chahiye.....no matter which logic you are using.
-    I solved using table. That can also be solved using the display property -- flexbox. 
-
-    
-
-    -->
+    <!-- Assignment  - starbuck global academy - form with navigation bar-->
+    <title>Partners for lifelong learners - Starbucks Global Academy - Starbucks Global Academy</title>
     <style>
         *{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* font-size: 20px; */
         }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: 0 100px;
+            padding-top: 20px;
+
+        }
+        button{
+            height: 40px;
+            width: 130px;
+            border-radius: 40px;
+        }
+        .btn2 button{
+            background-color: #00704A;
+            color: white;
+            border: none;
+        }
+
+
+
+
+
+
+
+   
         .bgimagee{
             background: url(./coffee.png);
             background-position: center;
@@ -43,16 +59,16 @@
             transform: scale(1.5);
         } */
         b{
-            font-size: 20px;
+            font-size: 16px;
         }
       #mainheader{
-        font-size: 40px;
+        font-size: 35px;
       }
       h1~p{
-        font-size: 18px;
+        font-size: 15px;
       }
       label,span,.label{
-        font-size: 18px;
+        font-size: 14px;
       }
       .name{
         width: 500px;
@@ -75,14 +91,91 @@
         width: 100px;
         background-color: #00704A;
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
         border-radius: 30px;
       }
 
+      .form{
+        background-color: #F5F5F5 ;
+      }
+
+
+
+      /*to remove the border -- **** use border:none and outline:none*/
+
+      select {
+        border: none;
+        outline: none;
+
+        font-size: 15px;
+      }
+        
     </style>
 </head>
-<body bgcolor="#F5F5F5">
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ap.starbucksglobalacademy.com/assets/img/logo.e4c5e5aa.svg" alt="">
+        </div>
+        <div class="opt1">
+            <select>
+                <option>Pursuit of Good</option>
+                <option>Greener Apron</option>
+                <option>Greener Stores</option>
+                <option>Community Champion</option>
+            </select>
+        </div>
+        <div class="opt2">
+            <select>
+                <option>Third Place</option>
+                <option>To Be Welcoming</option>
+                <option>Third Place Development Series</option>
+                <option>Connecting Over Coffee</option>
+            </select>
+        </div>
+        <div class="opt3">
+            <select>
+                <option>Coffee Academy</option>
+            </select>
+        </div>
+
+        <div class="opt4">
+            <select>
+                <option>Opportunity</option>
+                <option>Personal Finanace</option>
+                <option>Project Management</option>
+                <option>Design Thinking</option>
+            </select>
+        </div>
+        <div class="btn1">
+            <button>All Course</button>
+        </div>
+        <div class="btn2">
+            <button>Sign In</button>
+        </div>
+    </nav>
+    
+<br>
+
+    <section>
+        <div class="form">
+
+    <!--
+    
+    https://ap.starbucksglobalacademy.com/
+    
+    Design the coffee part from the above website.
+    Starbucks Global Academy
+
+
+    Bas output aana chahiye.....no matter which logic you are using.
+    I solved using table. That can also be solved using the display property -- flexbox. 
+
+    
+
+    -->
+
     <table width="1200px" align="center" cellspacing="50" bgcolor="#FFFFFF">
         <tr>
             <td class="bgimagee">
@@ -172,8 +265,7 @@
         </tr>
     </table>
     
-</body>
-</html>
+
 
 
 
@@ -184,3 +276,7 @@ How to make Malaysia & Phone Number quiet left.
 Kindly give the feedback for the design. And Any are of improvement in my codebase! 
 
 -->
+        </div>
+    </section>
+</body>
+</html>
